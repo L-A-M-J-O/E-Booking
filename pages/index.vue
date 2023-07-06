@@ -1,5 +1,3 @@
 <template>
- <section>
-  <h1>index</h1>
- </section>
+  <h1>Hola Index</h1>
 </template>

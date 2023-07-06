@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     },
   },
   // devtools: { enabled: true },
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", '@nuxtjs/color-mode'],
   i18n: {
     locales: ['en', 'fr', 'es'],
     defaultLocale: 'es',
