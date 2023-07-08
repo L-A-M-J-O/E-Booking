@@ -1,3 +1,5 @@
 <template>
-  <h1>Hola Index</h1>
+  <div>
+    <p>{{ $t("welcome") }}</p>
+  </div>
 </template>

@@ -101,8 +101,12 @@ import modeTheme from "~/components/modeTheme.vue";
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 640"
-                style="height: 1.5em"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="icon icon-leading"
+                style="width: 1em; height: 1em"
+                viewBox="0 0 512 512"
               >
                 <path
                   fill="currentColor"
@@ -113,21 +117,6 @@ import modeTheme from "~/components/modeTheme.vue";
                 ><!--]--></span
               ><!----></a
             >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-mail"
-            >
-              <path
-                d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z"
-              ></path>
-              <path d="M22 6L12 12L2 6"></path>
-            </svg>
           </li>
           <li>
             <a

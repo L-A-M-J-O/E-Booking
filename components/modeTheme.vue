@@ -25,11 +25,13 @@ body {
 }
 .select_mode {
   border: none;
-  width: 150px;
-  height: 100px;
 }
 .select_mode option {
   text-align: center;
+}
+.a-country:hover {
+  color: white;
+  background-color: #091a28;
 }
 
 .dark-mode body {
@@ -39,5 +41,18 @@ body {
 .dark-mode select {
   border: none;
   background-color: #091a28;
+}
+.dark-mode .nav-Dis {
+  background-color: #091a28;
+}
+.dark-mode a {
+  color: white;
+}
+.dark-mode .menu-country {
+  background-color: white;
+}
+.dark-mode .a-country:hover{
+  color: #091a28;
+  background-color: white;
 }
 </style>
