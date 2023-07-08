@@ -29,7 +29,7 @@ body {
 .select_mode option {
   text-align: center;
 }
-.a-country:hover {
+.a-country:hover {  
   color: white;
   background-color: #091a28;
 }

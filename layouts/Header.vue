@@ -261,7 +261,7 @@ onMounted(() => {
           >
             <li class="mx-2 my-6 md:my-0">
               <a
-                class="text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
+                class=" text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
                 href="/"
                 >{{ t("home") }}</a
               >
@@ -275,7 +275,7 @@ onMounted(() => {
             </li>
             <li class="mx-2 my-6 md:my-0">
               <a
-                class="text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
+                class= "text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
                 href="/LogIn"
                 >{{ t("login") }}</a
               >
