@@ -52,7 +52,6 @@ body {
   background-color: white;
 }
 .dark-mode .a-country:hover{
-  color: #091a28;
   background-color: white;
 }
 </style>
