@@ -57,9 +57,9 @@ onMounted(() => {
   <div class="container-2xl">
     <nav class="border-gray-200 dark:bg-gray-900">
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        class="max-w-screen-xl flex flex-wrap items-start md:items-center justify-center md:justify-between mx-auto p-4"
       >
-        <a href="/" class="flex items-center">
+        <a href="/" class="flex justify-center items-center mb-7 md:mb-0">
           <img
             src="../assets//img//marguisa_HOR_Neg.png"
             class="h-8 mr-3"
@@ -253,7 +253,7 @@ onMounted(() => {
           </button>
         </div>
         <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-10"
           id="navbar-language"
         >
           <ul
@@ -284,183 +284,5 @@ onMounted(() => {
         </div>
       </div>
     </nav>
-
-    <!-- <Disclosure as="nav" class="nav-Dis bg-white" v-slot="{ open }">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-          <div
-            class="md:flex items-center justify-center sm:items-stretch sm:justify-start"
-          >
-            <div class="md:opacity-0 fixed top-16 w-56 text-right">
-              <Menu as="div" class="relative inline-block text-left">
-                <div>
-                  <MenuButton
-                    class="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-                  >
-                    Options
-                    <ChevronDownIcon
-                      class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
-                      aria-hidden="true"
-                    />
-                  </MenuButton>
-                </div>
-
-                <transition
-                  enter-active-class="transition duration-100 ease-out"
-                  enter-from-class="transform scale-95 opacity-0"
-                  enter-to-class="transform scale-100 opacity-100"
-                  leave-active-class="transition duration-75 ease-in"
-                  leave-from-class="transform scale-100 opacity-100"
-                  leave-to-class="transform scale-95 opacity-0"
-                >
-                  <MenuItems
-                    class="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                  >
-                    <div class="px-1 py-1">
-                      <MenuItem v-slot="{ active }">
-                        <button
-                          :class="[
-                            active
-                              ? 'bg-violet-500 text-white'
-                              : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                          ]"
-                        >
-                          <EditIcon
-                            :active="active"
-                            class="mr-2 h-5 w-5 text-violet-400"
-                            aria-hidden="true"
-                          />
-                          Edit
-                        </button>
-                      </MenuItem>
-                      <MenuItem v-slot="{ active }">
-                        <button
-                          :class="[
-                            active
-                              ? 'bg-violet-500 text-white'
-                              : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                          ]"
-                        >
-                          <DuplicateIcon
-                            :active="active"
-                            class="mr-2 h-5 w-5 text-violet-400"
-                            aria-hidden="true"
-                          />
-                          Duplicate
-                        </button>
-                      </MenuItem>
-                    </div>
-                    <div class="px-1 py-1">
-                      <MenuItem v-slot="{ active }">
-                        <button
-                          :class="[
-                            active
-                              ? 'bg-violet-500 text-white'
-                              : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                          ]"
-                        >
-                          <ArchiveIcon
-                            :active="active"
-                            class="mr-2 h-5 w-5 text-violet-400"
-                            aria-hidden="true"
-                          />
-                          Archive
-                        </button>
-                      </MenuItem>
-                      <MenuItem v-slot="{ active }">
-                        <button
-                          :class="[
-                            active
-                              ? 'bg-violet-500 text-white'
-                              : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                          ]"
-                        >
-                          <MoveIcon
-                            :active="active"
-                            class="mr-2 h-5 w-5 text-violet-400"
-                            aria-hidden="true"
-                          />
-                          Move
-                        </button>
-                      </MenuItem>
-                    </div>
-
-                    <div class="px-1 py-1">
-                      <MenuItem v-slot="{ active }">
-                        <button
-                          :class="[
-                            active
-                              ? 'bg-violet-500 text-white'
-                              : 'text-gray-900',
-                            'group flex w-full items-center rounded-md px-2 py-2 text-sm',
-                          ]"
-                        >
-                          <DeleteIcon
-                            :active="active"
-                            class="mr-2 h-5 w-5 text-violet-400"
-                            aria-hidden="true"
-                          />
-                          Delete
-                        </button>
-                      </MenuItem>
-                    </div>
-                  </MenuItems>
-                </transition>
-              </Menu>
-            </div>
-            <div class="mt-10 md:mt-0 px-4 flex flex-shrink-0 items-center">
-              <img
-                class="block h-8 w-auto lg:hidden"
-                src="../assets/img/marguisa_HOR_Neg.png"
-                alt="Your Company"
-              />
-              <img
-                class="hidden h-8 w-auto lg:block"
-                src="../assets/img/marguisa_HOR_Neg.png"
-                alt="Your Company"
-              />
-            </div>
-            <div class="px-4 flex flex-shrink-0 items-start">
-              <ul
-                class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500"
-              >
-                <li class="mx-2 my-6 md:my-0">
-                  <a
-                    class="text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
-                    href="/"
-                    >{{ t("home") }}</a
-                  >
-                </li>
-                <li class="mx-2 my-6 md:my-0">
-                  <a
-                    class="text-gray-800 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-base font-medium"
-                    href="/Register"
-                    >{{ t("registerNow") }}</a
-                  >
-                </li>
-                <li class="mx-2 my-6 md:my-0">
-                  <a
-                    class="text-gray-800 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-base font-medium"
-                    href="/LogIn"
-                    >{{ t("login") }}</a
-                  >
-                </li>
-                <li class="mx-2 my-6 md:my-0">
-                  <select v-model="locale" class="text-base">
-                    <option value="es">es</option>
-                    <option value="en">en</option>
-                    <option value="fr">fr</option>
-                  </select>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Disclosure> -->
   </div>
 </template>
