@@ -54,4 +54,17 @@ body {
 .dark-mode .a-country:hover{
   background-color: white;
 }
+.dark-mode .label-register{
+  color: white;
+}
+.dark-mode .input-register {
+  border-color: rgb(75 85 99/var(--tw-border-opacity));
+  background-color: rgb(55 65 81/var(--tw-bg-opacity));
+}
+.dark-mode .input-register::placeholder {
+  color: rgba(255, 255, 255, 0.603);
+}
+.dark-mode .option-register {
+  color: white;
+}
 </style>
