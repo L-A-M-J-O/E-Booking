@@ -1,7 +1,9 @@
+n
 <script setup lang="ts">
 import { onMounted } from "vue";
 import { useI18n } from "~/.nuxt/imports";
-const { locale, t } = useI18n();
+const { locale, t, locales } = useI18n();
+const localePath = useLocalePath();
 const us = ref(false);
 const es = ref(true);
 const fr = ref(false);
@@ -37,6 +39,7 @@ import {
   initDropdowns,
   initTooltips,
 } from "flowbite";
+import { text } from "stream/consumers";
 
 // initialize components based on data attribute selectors
 onMounted(() => {
@@ -111,7 +114,7 @@ onMounted(() => {
                 <use xlink:href="#e" x="2470" />
               </g>
             </svg>
-            English (US)
+            <span>{{ t("btnCountryUS") }}</span>
           </button>
           <button
             v-show="es"
@@ -126,7 +129,7 @@ onMounted(() => {
                 src="../assets/img/spain.png"
                 alt="spain"
               />
-              <span> Spain (ES) </span>
+              <span>{{ t("btnCountryES") }}</span>
             </div>
           </button>
           <button
@@ -142,7 +145,7 @@ onMounted(() => {
                 src="../assets/img/france.png"
                 alt="spain"
               />
-              <span> France (FR) </span>
+              <span>{{ t("btnCountryFR") }}</span>
             </div>
           </button>
           <!-- Dropdown -->
@@ -189,7 +192,7 @@ onMounted(() => {
                         />
                       </g>
                     </svg>
-                    English (US)
+                    <span>{{ t("btnCountryUS") }}</span>
                   </div>
                 </button>
               </li>
@@ -205,7 +208,7 @@ onMounted(() => {
                       src="../assets/img/spain.png"
                       alt="spain"
                     />
-                    <span> Spain (ES) </span>
+                    <span>{{ t("btnCountryES") }}</span>
                   </div>
                 </button>
               </li>
@@ -221,7 +224,7 @@ onMounted(() => {
                       src="../assets/img/france.png"
                       alt="spain"
                     />
-                    <span> France (FR) </span>
+                    <span>{{ t("btnCountryFR") }}</span>
                   </div>
                 </button>
               </li>
@@ -260,24 +263,24 @@ onMounted(() => {
             class="md:opacity-100 transition-all ease-in duration-500 flex flex-col font-medium p-4 md:p-0 mt-4 border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
           >
             <li class="mx-2 my-6 md:my-0">
-              <a
-                class=" text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
-                href="/"
-                >{{ t("home") }}</a
-              >
-            </li>
-            <li class="mx-2 my-6 md:my-0">
-              <a
+              <NuxtLink
                 class="text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
-                href="/Register"
-                >{{ t("registerNow") }}</a
+                :to="localePath('/')"
+                >{{ t("home") }}</NuxtLink
               >
             </li>
             <li class="mx-2 my-6 md:my-0">
-              <a
-                class= "text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
-                href="/LogIn"
-                >{{ t("login") }}</a
+              <NuxtLink
+                class="text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
+                :to="localePath('/Register')"
+                >{{ t("registerNow") }}</NuxtLink
+              >
+            </li>
+            <li class="mx-2 my-6 md:my-0">
+              <NuxtLink
+                class="text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-md px-3 py-2 font-medium"
+                :to="localePath('/LogIn')"
+                >{{ t("login") }}</NuxtLink
               >
             </li>
           </ul>

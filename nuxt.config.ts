@@ -25,6 +25,7 @@ export default defineNuxtConfig({
   i18n: {
     locales: ['en', 'fr', 'es'],
     defaultLocale: 'es',
+    strategy: 'prefix_and_default'
   },
   css: ["~/assets/css/main.css"],
   postcss: {
