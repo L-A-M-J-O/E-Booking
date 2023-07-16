@@ -2,7 +2,7 @@
 import modeTheme from "~/components/modeTheme.vue";
 </script>
 <template>
-  <footer class="relative border-t u-bg-white u-border-gray-200">
+  <footer class="h-24 border-t u-bg-white u-border-gray-200 fixed inset-x-0 bottom-0">
     <div class="absolute inset-x-0 flex items-center justify-center -top-3">
       <div class="relative flex justify-center h-4 w-18">
         <div

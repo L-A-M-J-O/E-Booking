@@ -4,24 +4,20 @@ import Header from "./Header.vue";
 </script>
 <template>
   <div>
-    <Header />
-    <main>
-      <div class="default">
-        <slot />
-      </div>
-    </main>
+    <section>
+      <Header />
+      <main>
+        <div class="default">
+          <slot />
+        </div>
+      </main>
+    </section>
     <Footer  />
   </div>
 </template>
 <style>
-nav,
-footer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
 .layouts {
   padding: 1rem;
+  background-color: #041d2c;
 }
 </style>
