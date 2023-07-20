@@ -10,6 +10,10 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
+    fontFamily: {
+      display: ["Pally", "Comic Sans MS", "sans-serif"],
+      body: ["Pally", "Comic Sans MS", "sans-serif"],
+    },
     extend: {},
   },
   darkMode: ["class", '[data-theme="dark"]'],

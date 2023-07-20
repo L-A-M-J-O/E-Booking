@@ -1,5 +1,8 @@
+<script setup lang="ts">
+</script>
 <template>
-  <div>
+  <section class="index__pages-video h-full w-full">
+    <video src="../assets/img/video-home-f2.mp4" autoplay muted></video>
     <p>{{ $t("welcome") }}</p>
-  </div>
+  </section>
 </template>
