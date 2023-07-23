@@ -60,7 +60,7 @@ onMounted(() => {
   <div class="container-2xl">
     <nav class="border-gray-200 dark:bg-gray-900">
       <div
-        class="max-w-screen-xl flex flex-wrap items-start md:items-center justify-center md:justify-between mx-auto p-4"
+        class="w-screen-xl flex flex-wrap items-start md:items-center justify-center md:justify-around mx-auto my-auto p-4"
       >
         <a href="/" class="flex justify-center items-center mb-7 md:mb-0">
           <img
@@ -256,7 +256,7 @@ onMounted(() => {
           </button>
         </div>
         <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-10"
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-10 mr-28"
           id="navbar-language"
         >
           <ul
@@ -264,21 +264,21 @@ onMounted(() => {
           >
             <li class="mx-2 my-6 md:my-0">
               <NuxtLink
-                class="nav__nuxt text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
+                class="nav__nuxt text-gray-700 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
                 :to="localePath('/')"
                 >{{ t("home") }}</NuxtLink
               >
             </li>
             <li class="mx-2 my-6 md:my-0">
               <NuxtLink
-                class="nav__nuxt text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
+                class="nav__nuxt text-gray-700 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
                 :to="localePath('/Register')"
                 >{{ t("registerNow") }}</NuxtLink
               >
             </li>
             <li class="mx-2 my-6 md:my-0">
               <NuxtLink
-                class="nav__nuxt text-gray-800 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
+                class="nav__nuxt text-gray-700 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
                 :to="localePath('/LogIn')"
                 >{{ t("login") }}
               </NuxtLink>

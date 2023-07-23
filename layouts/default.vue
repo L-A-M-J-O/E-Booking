@@ -3,7 +3,7 @@ import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 </script>
 <template>
-  <div>
+  <div class="w-full h-screen">
     <section>
       <Header />
       <main>

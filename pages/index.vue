@@ -2,15 +2,9 @@
 <template>
   <section class="index__pages-video h-full w-full">
     <div class="container mx-auto">
-      <div class="grid grid-rows-2 grid-flow-none md:grid-flow-col gap-4">
-        <div
-        class="row-span-2 col-span-1 w-full h-64 bg-[#06f] rounded-lg"
-        ></div>
-        <div class="row-span-3">
-          <div class="flex flex-wrap">
-            <div class="basis-1/4">PP</div>
-            <div class="basis-1/2">PP</div>
-          </div>
+      <div class="flex flex-row justify-center">
+        <div class="main__box-img w-6/12 h-96 bg-green-500 mx-auto rounded-2xl">
+          ss
         </div>
       </div>
     </div>
