@@ -1,0 +1,1297 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 14291,
+      "max": [
+        15.303108215332031,
+        176.98013305664063,
+        1.1318458318710327
+      ],
+      "min": [
+        -55.393226623535156,
+        -621.888916015625,
+        -0.28014758229255676
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 171492,
+      "componentType": 5126,
+      "count": 14291,
+      "max": [
+        0.9980272054672241,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9980272650718689,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 14291,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 25722,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 342984,
+      "componentType": 5126,
+      "count": 3407,
+      "max": [
+        53.20589065551758,
+        225.65451049804688,
+        1.658984899520874
+      ],
+      "min": [
+        -72.01854705810547,
+        -790.8368530273438,
+        -0.7688457369804382
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 383868,
+      "componentType": 5126,
+      "count": 3407,
+      "max": [
+        1.0,
+        0.9999998807907104,
+        0.9999989867210388
+      ],
+      "min": [
+        -1.0,
+        -0.9951851963996887,
+        -0.9999996423721313
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 114328,
+      "componentType": 5126,
+      "count": 3407,
+      "max": [
+        1.0000001192092896,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 102888,
+      "componentType": 5125,
+      "count": 5937,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 424752,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        142.50341796875,
+        -24.955322265625,
+        1.6718497276306152
+      ],
+      "min": [
+        113.4483871459961,
+        -783.0740966796875,
+        -0.7817107439041138
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 425520,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        0.0,
+        0.005916413385421038,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.005916469264775515,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 141584,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        0.9900000095367432,
+        0.49000000953674316
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 126636,
+      "componentType": 5125,
+      "count": 138,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 426288,
+      "componentType": 5126,
+      "count": 56,
+      "max": [
+        142.50341796875,
+        263.0325622558594,
+        1.8680182695388794
+      ],
+      "min": [
+        53.205875396728516,
+        -817.7980346679688,
+        -0.977879524230957
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 426960,
+      "componentType": 5126,
+      "count": 56,
+      "max": [
+        0.5009592175483704,
+        0.005916469264775515,
+        0.9999992251396179
+      ],
+      "min": [
+        -1.0,
+        -0.9982873201370239,
+        -0.9999991655349731
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 142096,
+      "componentType": 5126,
+      "count": 56,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 127188,
+      "componentType": 5125,
+      "count": 84,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 427632,
+      "componentType": 5126,
+      "count": 4936,
+      "max": [
+        483.1222229003906,
+        263.0325622558594,
+        2.845052719116211
+      ],
+      "min": [
+        100.35932159423828,
+        -815.6973876953125,
+        -1.9549145698547363
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 486864,
+      "componentType": 5126,
+      "count": 4936,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 142544,
+      "componentType": 5126,
+      "count": 4936,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 127524,
+      "componentType": 5125,
+      "count": 8061,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 546096,
+      "componentType": 5126,
+      "count": 5,
+      "max": [
+        123.27739715576172,
+        -64.46356201171875,
+        1.6448018550872803
+      ],
+      "min": [
+        123.27738189697266,
+        -778.286376953125,
+        -0.7546628713607788
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 546156,
+      "componentType": 5126,
+      "count": 5,
+      "max": [
+        -1.0,
+        -1.280597849984133e-08,
+        6.70180043016444e-06
+      ],
+      "min": [
+        -1.0,
+        -1.280597849984133e-08,
+        6.70180043016444e-06
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 182032,
+      "componentType": 5126,
+      "count": 5,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 159768,
+      "componentType": 5125,
+      "count": 9,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 546216,
+      "componentType": 5126,
+      "count": 1296,
+      "max": [
+        232.19476318359375,
+        30.303970336914063,
+        1.6234149932861328
+      ],
+      "min": [
+        118.6739273071289,
+        -581.212646484375,
+        -0.6503664255142212
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 561768,
+      "componentType": 5126,
+      "count": 1296,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 182072,
+      "componentType": 5126,
+      "count": 1296,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.125,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 159804,
+      "componentType": 5125,
+      "count": 2268,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 577320,
+      "componentType": 5126,
+      "count": 1536,
+      "max": [
+        287.773193359375,
+        30.303970336914063,
+        1.592065691947937
+      ],
+      "min": [
+        118.67393493652344,
+        -532.512939453125,
+        -0.6447033882141113
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 595752,
+      "componentType": 5126,
+      "count": 1536,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 192440,
+      "componentType": 5126,
+      "count": 1536,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.125,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 168876,
+      "componentType": 5125,
+      "count": 2592,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 614184,
+      "componentType": 5126,
+      "count": 624,
+      "max": [
+        233.84307861328125,
+        -175.0345001220703,
+        1.5811671018600464
+      ],
+      "min": [
+        180.34405517578125,
+        -274.4271240234375,
+        -0.6544550061225891
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 621672,
+      "componentType": 5126,
+      "count": 624,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 204728,
+      "componentType": 5126,
+      "count": 624,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.125,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 179244,
+      "componentType": 5125,
+      "count": 972,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 629160,
+      "componentType": 5126,
+      "count": 416,
+      "max": [
+        232.03173828125,
+        -70.96092224121094,
+        0.031295277178287506
+      ],
+      "min": [
+        124.32244110107422,
+        -170.3535614013672,
+        -0.687218427658081
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 634152,
+      "componentType": 5126,
+      "count": 416,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 209720,
+      "componentType": 5126,
+      "count": 416,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.125,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 183132,
+      "componentType": 5125,
+      "count": 648,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 639144,
+      "componentType": 5126,
+      "count": 6176,
+      "max": [
+        286.69903564453125,
+        242.15841674804688,
+        1.5862733125686646
+      ],
+      "min": [
+        103.73041534423828,
+        -585.874755859375,
+        -0.7458061575889587
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 713256,
+      "componentType": 5126,
+      "count": 6176,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 213048,
+      "componentType": 5126,
+      "count": 6176,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.125,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 185724,
+      "componentType": 5125,
+      "count": 9720,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 787368,
+      "componentType": 5126,
+      "count": 124,
+      "max": [
+        444.9859619140625,
+        -49.00210952758789,
+        0.5151735544204712
+      ],
+      "min": [
+        428.3860778808594,
+        -61.023712158203125,
+        0.3722448945045471
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 788856,
+      "componentType": 5126,
+      "count": 124,
+      "max": [
+        0.5186624526977539,
+        0.835491418838501,
+        1.0
+      ],
+      "min": [
+        -0.5188478231430054,
+        -0.8356431722640991,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 262456,
+      "componentType": 5126,
+      "count": 124,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 224604,
+      "componentType": 5125,
+      "count": 186,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 790344,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        437.4046630859375,
+        -52.022254943847656,
+        0.47288018465042114
+      ],
+      "min": [
+        434.58221435546875,
+        -55.09453201293945,
+        0.41796568036079407
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 790392,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.3517225384712219,
+        0.3099551498889923,
+        0.8833001255989075
+      ],
+      "min": [
+        0.3517225384712219,
+        0.3099551498889923,
+        0.8833001255989075
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 263448,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.3552589416503906,
+        0.7302594184875488
+      ],
+      "min": [
+        0.14474107325077057,
+        0.519740641117096
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 225348,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "jav_err (https://sketchfab.com/jav_err)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/buque-de-carga-ea7a7e0e36fe4d9f8b7bc12ab78f1b81",
+      "title": "Buque de Carga"
+    },
+    "generator": "Sketchfab-13.42.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 225372,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 263480,
+      "byteOffset": 225372,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 790440,
+      "byteOffset": 488852,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1279292,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Helices_Barco",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.342383,
+          0.155088,
+          0.0112072,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.958740359171389
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Fondo_Externo_Barcos",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.450786,
+          0.00273174,
+          0.00367651,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9780739474254179
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Base_Barco",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.752942,
+          0.752942,
+          0.752942,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8316370504885353
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Exterior_Buque",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.135633,
+          0.610496,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9684529866221356
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Antenas",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.7763932022500211
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Fondo_Interno_Buque",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.341915,
+          0.341915,
+          0.341915,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.923545481747316
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Furgones_Morados",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.708376,
+          0.00913406,
+          0.47932,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9571255607518716
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Furgones_Azules",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0241576,
+          0.584078,
+          0.982251,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8895858671273229
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Furgones_Narajas",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.327222,
+          0.000614754,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9001207556895836
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Furgones_Rojos",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.0144438,
+          0.130136,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9480503215247127
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Furgones_Amarillos",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.693872,
+          0.0241576,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8411046890634909
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Luces_Barcos.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Luces_Barco_Interior.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8375192915880365
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Buque De Carga_Helices Barco_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Fondo Externo Barcos_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Base Barco_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Exterior Buque_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Antenas_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Fondo Interno Buque_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 21,
+            "POSITION": 20,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Furgones Morados_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 25,
+            "POSITION": 24,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Furgones Azules_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 29,
+            "POSITION": 28,
+            "TEXCOORD_0": 30
+          },
+          "indices": 31,
+          "material": 7,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Furgones Narajas_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 33,
+            "POSITION": 32,
+            "TEXCOORD_0": 34
+          },
+          "indices": 35,
+          "material": 8,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Furgones Rojos_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 37,
+            "POSITION": 36,
+            "TEXCOORD_0": 38
+          },
+          "indices": 39,
+          "material": 9,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Furgones Amarillos_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 41,
+            "POSITION": 40,
+            "TEXCOORD_0": 42
+          },
+          "indices": 43,
+          "material": 10,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Luces Barcos.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 45,
+            "POSITION": 44,
+            "TEXCOORD_0": 46
+          },
+          "indices": 47,
+          "material": 11,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Buque De Carga_Luces Barco Interior.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 49,
+            "POSITION": 48,
+            "TEXCOORD_0": 50
+          },
+          "indices": 51,
+          "material": 12,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "66e5a21833184702963ddecc9013f5a8.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "matrix": [
+        -1.8780184713027537e-08,
+        0.24875108897685935,
+        -3.641319720220351e-11,
+        -0.0,
+        -0.24874873215408555,
+        -1.8779848760519654e-08,
+        0.0010794005505224595,
+        -0.0,
+        -0.0819613731028419,
+        -8.952823357928642e-09,
+        -18.888064894048657,
+        -0.0,
+        -37.07572555541992,
+        28.809118270874023,
+        11.196584701538086,
+        1.0
+      ],
+      "name": "Buque De Carga"
+    },
+    {
+      "mesh": 0,
+      "name": "Buque De Carga_Helices Barco_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Buque De Carga_Fondo Externo Barcos_0"
+    },
+    {
+      "mesh": 2,
+      "name": "Buque De Carga_Base Barco_0"
+    },
+    {
+      "mesh": 3,
+      "name": "Buque De Carga_Exterior Buque_0"
+    },
+    {
+      "mesh": 4,
+      "name": "Buque De Carga_Antenas_0"
+    },
+    {
+      "mesh": 5,
+      "name": "Buque De Carga_Fondo Interno Buque_0"
+    },
+    {
+      "mesh": 6,
+      "name": "Buque De Carga_Furgones Morados_0"
+    },
+    {
+      "mesh": 7,
+      "name": "Buque De Carga_Furgones Azules_0"
+    },
+    {
+      "mesh": 8,
+      "name": "Buque De Carga_Furgones Narajas_0"
+    },
+    {
+      "mesh": 9,
+      "name": "Buque De Carga_Furgones Rojos_0"
+    },
+    {
+      "mesh": 10,
+      "name": "Buque De Carga_Furgones Amarillos_0"
+    },
+    {
+      "mesh": 11,
+      "name": "Buque De Carga_Luces Barcos.001_0"
+    },
+    {
+      "mesh": 12,
+      "name": "Buque De Carga_Luces Barco Interior.001_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

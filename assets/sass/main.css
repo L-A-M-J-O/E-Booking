@@ -68,7 +68,6 @@
   color: #333;
   margin-bottom: 10px;
 }
-
 .nav__nuxt::after {
   content: "";
   position: absolute;
@@ -87,6 +86,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
