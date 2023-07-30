@@ -5,14 +5,14 @@ import Header from "./Header.vue";
 <template>
   <div class="w-full h-screen">
     <section>
-      <Header />
-      <main>
+      <Header class="mt-2" />
+      <main class="mt-6">
         <div class="default">
           <slot />
         </div>
       </main>
     </section>
-    <Footer  />
+    <!-- <Footer  /> -->
   </div>
 </template>
 <style>
