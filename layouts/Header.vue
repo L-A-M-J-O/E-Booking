@@ -1,4 +1,3 @@
-n
 <script setup lang="ts">
 import { onMounted } from "vue";
 import { useI18n } from "~/.nuxt/imports";
@@ -39,7 +38,6 @@ import {
   initDropdowns,
   initTooltips,
 } from "flowbite";
-import { text } from "stream/consumers";
 
 // initialize components based on data attribute selectors
 onMounted(() => {
@@ -60,7 +58,7 @@ onMounted(() => {
   <div class="container-2xl">
     <nav class="border-gray-200 dark:bg-gray-900">
       <div
-        class="w-screen-xl flex flex-wrap items-start md:items-center justify-center md:justify-around mx-auto my-auto p-4"
+        class="w-screen-xl flex flex-wrap items-start md:items-center justify-center md:justify-around mx-auto"
       >
         <a href="/" class="flex justify-center items-center mb-7 md:mb-0">
           <img

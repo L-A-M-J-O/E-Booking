@@ -62,6 +62,35 @@
   background-color: #03192b;
 }
 
+.booking__btn {
+  width: 200px;
+  height: 50px;
+  margin: 1em;
+  background-color: #001c30;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 p {
+  color: #001c30;
+  font-size: 80px;
+  word-spacing: 2em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h2 p .span_title {
+  color: #001c30;
+  font-size: 20px;
+  word-spacing: 0;
+  font-weight: bold;
+  font-family: "Fjalla One", "Fjalla One Placeholder", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
 .nav__nuxt {
   position: relative;
   text-decoration: none;
@@ -86,12 +115,13 @@
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   box-sizing: border-box;
 }
 
 .main__box-img {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/header-ship.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header-ship.jpg");
+  background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
 } 
