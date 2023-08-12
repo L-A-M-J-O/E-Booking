@@ -46,10 +46,6 @@
   background-color: rgb(55 65 81/var(--tw-bg-opacity));
 }
 
-.dark-mode .input-register::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.603);
-}
-
 .dark-mode .input-register::placeholder {
   color: rgba(255, 255, 255, 0.603);
 }
@@ -81,7 +77,6 @@ h2 p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
 h2 p .span_title {
   color: #001c30;
   font-size: 20px;
@@ -97,7 +92,6 @@ h2 p .span_title {
   color: #333;
   margin-bottom: 10px;
 }
-
 .nav__nuxt::after {
   content: "";
   position: absolute;
@@ -124,6 +118,6 @@ h2 p .span_title {
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-} 
+}
 
 /*# sourceMappingURL=main.css.map */
