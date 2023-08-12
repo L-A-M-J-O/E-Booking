@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import viewTravel from "~/components/viewTravel.vue";
 import { useI18n } from "~/.nuxt/imports";
 import { onMounted, ref } from "vue";
 const { locale, t, locales } = useI18n();
@@ -8,37 +9,37 @@ const options = Array.from({ length: 1000 }).map((_, idx) => ({
   value: `Option${idx + 1}`,
   label: `${initials[idx % 10]}${idx}`,
 }));
-const size = ref<'default' | 'large' | 'small'>('default')
-
-const value1 = ref('')
-const value2 = ref('')
+const size = ref<"default" | "large" | "small">("default");
+const checked3 = ref("");
+const value1 = ref("");
+const value2 = ref("");
 
 const shortcuts = [
   {
-    text: 'Today',
+    text: "Today",
     value: new Date(),
   },
   {
-    text: 'Yesterday',
+    text: "Yesterday",
     value: () => {
-      const date = new Date()
-      date.setTime(date.getTime() - 3600 * 1000 * 24)
-      return date
+      const date = new Date();
+      date.setTime(date.getTime() - 3600 * 1000 * 24);
+      return date;
     },
   },
   {
-    text: 'A week ago',
+    text: "A week ago",
     value: () => {
-      const date = new Date()
-      date.setTime(date.getTime() - 3600 * 1000 * 24 * 7)
-      return date
+      const date = new Date();
+      date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
+      return date;
     },
   },
-]
+];
 
 const disabledDate = (time: Date) => {
-  return time.getTime() > Date.now()
-}
+  return time.getTime() > Date.now();
+};
 const viewRoro = ref(false);
 const viewConteiner = ref(true);
 const viewConvencional = ref(false);
@@ -74,7 +75,7 @@ const viewConvencional = ref(false);
                   <button class="booking__btn rounded-2xl">Container</button>
                 </div>
               </div>
-              <div class="flex flex-wrap p-10">
+              <div class="flex flex-wrap px-10 py-5 justify-center">
                 <div>
                   <label
                     for="city"
@@ -119,8 +120,9 @@ const viewConvencional = ref(false);
                     multiple
                   />
                 </div>
+              </div>
+              <div class="flex flex-wrap px-10 py-5 justify-center">
                 <div class="block">
-                  <span class="demonstration">Picker with quick options</span>
                   <el-date-picker
                     v-model="value2"
                     type="date"
@@ -130,9 +132,77 @@ const viewConvencional = ref(false);
                     :size="size"
                   />
                 </div>
+                <div class="px-5">
+                  <el-select-v2
+                    v-model="value"
+                    filterable
+                    :options="options"
+                    placeholder="Please select"
+                    style="width: 240px"
+                    multiple
+                  />
+                </div>
+                <div class="">
+                  <el-checkbox v-model="checked3" label="Option1" border />
+                </div>
+              </div>
+              <div class="flex flex-wrap px-5 py-5 justify-center">
+                <button class="border border-b-blue-800">
+                  <div class="flex flex-row">
+                    <div>
+                      <span>Buscar Ruta</span>
+                    </div>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="flex flex-wrap px-5 py-5 justify-center relative">
+                <button
+                  class="border border-b-blue-800 absolute bottom-[20em] right-[0.5em]"
+                >
+                  <div class="flex flex-row">
+                    <div>
+                      <span>Clear </span>
+                    </div>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="travel__box mx-0 mt-36 bg-[#DDE6ED] rounded-md">
+          <viewTravel />
         </div>
       </div>
     </div>

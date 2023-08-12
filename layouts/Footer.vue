@@ -2,7 +2,7 @@
 import modeTheme from "~/components/modeTheme.vue";
 </script>
 <template>
-  <footer class="h-24 border-t u-bg-white u-border-gray-200 fixed inset-x-0 bottom-0">
+  <footer class="h-24 border-t u-bg-white u-border-gray-200 inset-x-0 bottom-0 text-white bg-[#001c30]">
     <div class="absolute inset-x-0 flex items-center justify-center -top-3">
       <div class="relative flex justify-center h-4 w-18">
         <div
@@ -11,7 +11,7 @@ import modeTheme from "~/components/modeTheme.vue";
         <img src="../assets/img/marguisa_HOR_Neg.png" alt="marguisa"/>
       </div>
     </div>
-    <div class="container mx-auto py-6">
+    <div class="container mx-auto py-5">
       <div
         class="sm:relative flex flex-col items-center gap-3 sm:flex-row sm:justify-between justify-center"
       >

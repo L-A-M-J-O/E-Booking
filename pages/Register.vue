@@ -19,7 +19,7 @@ const options = [
 </script>
 <template>
   <div>
-    <div class="img-prueba container mx-auto">
+    <div class="img-prueba container mx-auto h-screen w-full">
       <label class="relative inline-flex items-center cursor-pointer">
         <input type="checkbox" value="" class="sr-only peer" />
         <div

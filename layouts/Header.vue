@@ -262,21 +262,21 @@ onMounted(() => {
           >
             <li class="mx-2 my-6 md:my-0">
               <NuxtLink
-                class="nav__nuxt text-gray-700 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
+                class="nav__nuxt text-gray-700 hover:bg-[#001c30] hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
                 :to="localePath('/')"
                 >{{ t("home") }}</NuxtLink
               >
             </li>
             <li class="mx-2 my-6 md:my-0">
               <NuxtLink
-                class="nav__nuxt text-gray-700 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
+                class="nav__nuxt text-gray-700 hover:bg-[#001c30] hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
                 :to="localePath('/Register')"
                 >{{ t("registerNow") }}</NuxtLink
               >
             </li>
             <li class="mx-2 my-6 md:my-0">
               <NuxtLink
-                class="nav__nuxt text-gray-700 hover:bg-blue-700 hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
+                class="nav__nuxt text-gray-700 hover:bg-[#001c30] hover:text-white text-base rounded-t-lg px-3 py-2 font-medium"
                 :to="localePath('/LogIn')"
                 >{{ t("login") }}
               </NuxtLink>
