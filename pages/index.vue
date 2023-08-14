@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import viewTravel from "~/components/viewTravel.vue";
 import { useI18n } from "~/.nuxt/imports";
+import { useData } from "~/composables/useData";
 import { onMounted, ref } from "vue";
 const { locale, t, locales } = useI18n();
 const initials = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
@@ -9,6 +9,7 @@ const options = Array.from({ length: 1000 }).map((_, idx) => ({
   value: `Option${idx + 1}`,
   label: `${initials[idx % 10]}${idx}`,
 }));
+const { sendFormData, fetchDataList } = useData();
 const size = ref<"default" | "large" | "small">("default");
 const checked3 = ref("");
 const value1 = ref("");
@@ -202,7 +203,6 @@ const viewConvencional = ref(false);
           </div>
         </div>
         <div class="travel__box mx-0 mt-36 bg-[#DDE6ED] rounded-md">
-          <viewTravel />
         </div>
       </div>
     </div>
