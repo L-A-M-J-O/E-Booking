@@ -1,13 +1,17 @@
 // cores/DataCore.js
 import { sendDataRequest } from '../adapters/api/BookingService';
 
-export async function sendData(data: any) {
+export async function sendData() {
   // Realizar lógica adicional si es necesario
-  const response = await sendDataRequest(data);
-  return response;
 }
 
 export async function listData() {
-  // Lógica para listar datos
-  // Puede interactuar con otro adaptador para obtener la lista
+  const response = await sendDataRequest();
+  if (response) {
+    if (response.data) {
+      return response.data.near_earth_objects
+    } else {
+      return `datos no existen`
+    }
+  }
 }

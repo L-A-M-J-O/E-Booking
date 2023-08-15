@@ -1,15 +1,18 @@
 <script setup lang="ts">
+import axios from "axios";
 import { useI18n } from "~/.nuxt/imports";
 import { useData } from "~/composables/useData";
 import { onMounted, ref } from "vue";
 const { locale, t, locales } = useI18n();
+const { sendFormData, fetchDataList } = useData();
+const dataCore = ref();
+
 const initials = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 const value = ref([]);
 const options = Array.from({ length: 1000 }).map((_, idx) => ({
   value: `Option${idx + 1}`,
   label: `${initials[idx % 10]}${idx}`,
 }));
-const { sendFormData, fetchDataList } = useData();
 const size = ref<"default" | "large" | "small">("default");
 const checked3 = ref("");
 const value1 = ref("");
@@ -38,12 +41,18 @@ const shortcuts = [
   },
 ];
 
+const pedirdatos = async () => {
+  dataCore.value = await fetchDataList();
+  console.log(dataCore.value);
+};
 const disabledDate = (time: Date) => {
   return time.getTime() > Date.now();
 };
 const viewRoro = ref(false);
 const viewConteiner = ref(true);
 const viewConvencional = ref(false);
+
+onMounted(async () => {});
 </script>
 <template>
   <section class="index__pages-video h-full w-full">
@@ -151,7 +160,7 @@ const viewConvencional = ref(false);
                 <button class="border border-b-blue-800">
                   <div class="flex flex-row">
                     <div>
-                      <span>Buscar Ruta</span>
+                      <span @click="pedirdatos()">Buscar Ruta</span>
                     </div>
                     <div>
                       <svg
@@ -202,7 +211,41 @@ const viewConvencional = ref(false);
             </div>
           </div>
         </div>
-        <div class="travel__box mx-0 mt-36 bg-[#DDE6ED] rounded-md">
+        <div class="h-96">
+          <div class="travel__box mx-0 mt-36 rounded-md flex flex-wrap">
+            <div class="card flex-grow m-2 h-60 md:h-52">
+              <div class="card__header flex flex-wrap justify-center">
+                <div class="card__title mx-3 my-3">
+                  <div class="skeleton skeleton-text"></div>
+                  <div class="skeleton skeleton-text"></div>
+                </div>
+              </div>
+              <div class="card__body flex flex-wrap my-5 justify-center">
+                <div class="skeleton skeleton-text mx-2"></div>
+                <div class="skeleton skeleton-text mx-2"></div>
+              </div>
+              <div class="card__body-btn flex flex-wrap mt-5 justify-center">
+                <div class="skeleton skeleton-btn mx-2"></div>
+                <div class="skeleton skeleton-btn mx-2"></div>
+              </div>
+            </div>
+            <div class="card flex-grow m-2 h-60 md:h-52">
+              <div class="card__header flex flex-wrap justify-center">
+                <div class="card__title mx-3 my-3">
+                  <div class="skeleton skeleton-text"></div>
+                  <div class="skeleton skeleton-text"></div>
+                </div>
+              </div>
+              <div class="card__body flex flex-wrap my-5 justify-center">
+                <div class="skeleton skeleton-text mx-2"></div>
+                <div class="skeleton skeleton-text mx-2"></div>
+              </div>
+              <div class="card__body-btn flex flex-wrap mt-5 justify-center">
+                <div class="skeleton skeleton-btn mx-2"></div>
+                <div class="skeleton skeleton-btn mx-2"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -46,10 +46,6 @@
   background-color: rgb(55 65 81/var(--tw-bg-opacity));
 }
 
-.dark-mode .input-register::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.603);
-}
-
 .dark-mode .input-register::placeholder {
   color: rgba(255, 255, 255, 0.603);
 }
@@ -62,6 +58,88 @@
   background-color: #03192b;
 }
 
+.card {
+  width: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 16px;
+  border-radius: 4px;
+}
+.card .header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.card .body {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.card .body-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card .description {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card .skeleton {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+.card .skeleton-text {
+  width: 300px;
+  height: 1em;
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+.card .skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 300px;
+}
+.card .skeleton-p {
+  width: 300px;
+  height: 1em;
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+.card .skeleton-p:last-child {
+  margin-bottom: 0;
+  width: 350px;
+}
+.card .skeleton-btn {
+  width: 300px;
+  height: 2em;
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+.card .skeleton-btn:last-child {
+  margin-bottom: 0;
+  width: 300px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
 .booking__btn {
   width: 200px;
   height: 50px;
@@ -81,7 +159,6 @@ h2 p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
 h2 p .span_title {
   color: #001c30;
   font-size: 20px;
@@ -97,7 +174,6 @@ h2 p .span_title {
   color: #333;
   margin-bottom: 10px;
 }
-
 .nav__nuxt::after {
   content: "";
   position: absolute;
@@ -124,6 +200,6 @@ h2 p .span_title {
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-} 
+}
 
 /*# sourceMappingURL=main.css.map */
