@@ -8,7 +8,7 @@ import modeTheme from "~/components/modeTheme.vue";
         <div
           class="absolute w-full h-full inset-0 -top-[2px] blur-[6px] u-bg-white rounded-full"
         ></div>
-        <img src="../assets/img/marguisa_HOR_Neg.png" alt="marguisa"/>
+        <!-- <img src="../assets/img/marguisa_HOR_Neg.png" alt="marguisa"/> -->
       </div>
     </div>
     <div class="container mx-auto py-5">

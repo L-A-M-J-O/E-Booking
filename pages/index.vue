@@ -55,25 +55,22 @@ const viewConvencional = ref(false);
 onMounted(async () => {});
 </script>
 <template>
-  <section class="index__pages-video h-full w-full">
-    <div class="container mx-auto">
-      <div class="flex flex-col h-screen">
-        <div class="title_box w-auto mx-auto h-auto mb-10">
-          <h2>
-            <p class="text-center">
-              e-Booking
-              <span class="span_title block text-center">
-                Consulta nuestros schedules y reserva tu espacio en un solo
-                click
-              </span>
-            </p>
-          </h2>
-        </div>
-        <div class="main__box-img w-auto h-3/6 rounded-2xl relative">
-          <div class="booking__box w-auto mx-auto h-auto">
-            <div
-              class="button__box absolute bottom-[-10%] right-[18%] h-18 w-2/3 bg-[#FFFFFF] rounded-xl shadow-2xl"
-            >
+  <section class="container mx-auto">
+    <div class="flex flex-col">
+      <div class="box-title h-auto m-5">
+        <h2>
+          <p class="text-center">
+            e-Booking
+            <span class="span_title block text-center">
+              Consulta nuestros schedules y reserva tu espacio en un solo click
+            </span>
+          </p>
+        </h2>
+      </div>
+      <div class="box-booking shadow-2xl m-5 h-96">
+        <div class="box-img rounded-2xl relative">
+          <div class="box-booking flex justify-center">
+            <div class="box-btm bg-[#FFFFFF] h-18 w-2/3 rounded-xl shadow-2xl absolute top-[50%]">
               <div class="flex flex-wrap justify-center items-end content-end">
                 <div class="flex">
                   <button class="booking__btn rounded-2xl">Container</button>
@@ -211,40 +208,70 @@ onMounted(async () => {});
             </div>
           </div>
         </div>
-        <div class="h-96">
-          <div class="travel__box mx-0 mt-36 rounded-md flex flex-wrap">
-            <div class="card flex-grow m-2 h-60 md:h-52">
-              <div class="card__header flex flex-wrap justify-center">
-                <div class="card__title mx-3 my-3">
-                  <div class="skeleton skeleton-text"></div>
-                  <div class="skeleton skeleton-text"></div>
-                </div>
-              </div>
-              <div class="card__body flex flex-wrap my-5 justify-center">
-                <div class="skeleton skeleton-text mx-2"></div>
-                <div class="skeleton skeleton-text mx-2"></div>
-              </div>
-              <div class="card__body-btn flex flex-wrap mt-5 justify-center">
-                <div class="skeleton skeleton-btn mx-2"></div>
-                <div class="skeleton skeleton-btn mx-2"></div>
-              </div>
+      </div>
+      <div class="box-travel m-5 mt-36 rounded-md flex flex-wrap h-screen content-around">
+        <div class="card flex-grow m-2 h-60 md:h-52">
+          <div class="card__header flex flex-wrap justify-center">
+            <div class="card__title mx-3 my-3">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
             </div>
-            <div class="card flex-grow m-2 h-60 md:h-52">
-              <div class="card__header flex flex-wrap justify-center">
-                <div class="card__title mx-3 my-3">
-                  <div class="skeleton skeleton-text"></div>
-                  <div class="skeleton skeleton-text"></div>
-                </div>
-              </div>
-              <div class="card__body flex flex-wrap my-5 justify-center">
-                <div class="skeleton skeleton-text mx-2"></div>
-                <div class="skeleton skeleton-text mx-2"></div>
-              </div>
-              <div class="card__body-btn flex flex-wrap mt-5 justify-center">
-                <div class="skeleton skeleton-btn mx-2"></div>
-                <div class="skeleton skeleton-btn mx-2"></div>
-              </div>
+          </div>
+          <div class="card__body flex flex-wrap my-5 justify-center">
+            <div class="skeleton skeleton-text mx-2"></div>
+            <div class="skeleton skeleton-text mx-2"></div>
+          </div>
+          <div class="card__body-btn flex flex-wrap mt-5 justify-center">
+            <div class="skeleton skeleton-btn mx-2"></div>
+            <div class="skeleton skeleton-btn mx-2"></div>
+          </div>
+        </div>
+        <div class="card flex-grow m-2 h-60 md:h-52">
+          <div class="card__header flex flex-wrap justify-center">
+            <div class="card__title mx-3 my-3">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
             </div>
+          </div>
+          <div class="card__body flex flex-wrap my-5 justify-center">
+            <div class="skeleton skeleton-text mx-2"></div>
+            <div class="skeleton skeleton-text mx-2"></div>
+          </div>
+          <div class="card__body-btn flex flex-wrap mt-5 justify-center">
+            <div class="skeleton skeleton-btn mx-2"></div>
+            <div class="skeleton skeleton-btn mx-2"></div>
+          </div>
+        </div>
+        <div class="card flex-grow m-2 h-60 md:h-52">
+          <div class="card__header flex flex-wrap justify-center">
+            <div class="card__title mx-3 my-3">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+          </div>
+          <div class="card__body flex flex-wrap my-5 justify-center">
+            <div class="skeleton skeleton-text mx-2"></div>
+            <div class="skeleton skeleton-text mx-2"></div>
+          </div>
+          <div class="card__body-btn flex flex-wrap mt-5 justify-center">
+            <div class="skeleton skeleton-btn mx-2"></div>
+            <div class="skeleton skeleton-btn mx-2"></div>
+          </div>
+        </div>
+        <div class="card flex-grow m-2 h-60 md:h-52">
+          <div class="card__header flex flex-wrap justify-center">
+            <div class="card__title mx-3 my-3">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+          </div>
+          <div class="card__body flex flex-wrap my-5 justify-center">
+            <div class="skeleton skeleton-text mx-2"></div>
+            <div class="skeleton skeleton-text mx-2"></div>
+          </div>
+          <div class="card__body-btn flex flex-wrap mt-5 justify-center">
+            <div class="skeleton skeleton-btn mx-2"></div>
+            <div class="skeleton skeleton-btn mx-2"></div>
           </div>
         </div>
       </div>
