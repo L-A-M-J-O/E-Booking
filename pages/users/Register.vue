@@ -2,6 +2,7 @@
 import { useI18n } from "~/.nuxt/imports";
 const { locale, t, locales } = useI18n();
 const value = ref<string[]>([]);
+const stateToogle = ref(true);
 const options = [
   {
     value: "HTML",
@@ -20,17 +21,18 @@ const options = [
 <template>
   <div>
     <div class="img-prueba container mx-auto h-screen w-full">
-      <label class="relative inline-flex items-center cursor-pointer">
-        <input type="checkbox" value="" class="sr-only peer" />
-        <div
-          class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
-        ></div>
-        <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
-          >Toggle me</span
-        >
-      </label>
-
-      <form>
+      <form class="mt-40">
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer"
+            @click="stateToogle = !stateToogle"
+          />
+          <div
+            class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+          ></div>
+        </label>
         <div class="grid gap-6 mb-6 md:grid-cols-3">
           <div>
             <label
@@ -46,33 +48,53 @@ const options = [
               required
             />
           </div>
-          <div>
-            <label
-              for="last_name"
-              class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >{{ t("lastName") }}</label
-            >
-            <input
-              type="text"
-              id="last_name"
-              class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              :placeholder="t('lastName')"
-              required
-            />
+          <div v-show="stateToogle === true">
+            <div>
+              <label
+                for="last_name"
+                class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >{{ t("lastName") }}</label
+              >
+              <input
+                type="text"
+                id="last_name"
+                class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                :placeholder="t('lastName')"
+                required
+              />
+            </div>
           </div>
-          <div>
-            <label
-              for="company"
-              class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >{{ t("nif") }}</label
-            >
-            <input
-              type="text"
-              id="company"
-              class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              :placeholder="t('nif')"
-              required
-            />
+          <div v-show="stateToogle === true">
+            <div>
+              <label
+                for="company"
+                class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >{{ t("nif") }}</label
+              >
+              <input
+                type="text"
+                id="company"
+                class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                :placeholder="t('nif')"
+                required
+              />
+            </div>
+          </div>
+          <div v-show="stateToogle === false">
+            <div>
+              <label
+                for="company"
+                class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >{{ t("CIF") }}</label
+              >
+              <input
+                type="text"
+                id="CIF"
+                class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                :placeholder="t('CIF')"
+                required
+              />
+            </div>
           </div>
           <div>
             <label
@@ -139,13 +161,83 @@ const options = [
             <label
               for="city"
               class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >{{ t("city") }}</label
+              >{{ t("country") }}</label
             >
             <input
               type="url"
-              id=" city"
+              id="country"
               class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              :placeholder="t('city')"
+              :placeholder="t('country')"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="city"
+              class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >{{ t("numberT") }}</label
+            >
+            <input
+              type="url"
+              id="numberT"
+              class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              :placeholder="t('numberT')"
+              required
+            />
+          </div>
+        </div>
+        <div class="grid gap-8 p-2 md:grid-cols-2">
+          <div>
+            <label
+              for="city"
+              class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >{{ t("email") }}</label
+            >
+            <input
+              type="url"
+              id="email"
+              class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              :placeholder="t('email')"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="city"
+              class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >{{ t("emailc") }}</label
+            >
+            <input
+              type="url"
+              id="email"
+              class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="city"
+              class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >{{ t("password") }}</label
+            >
+            <input
+              type="url"
+              id="password"
+              class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              :placeholder="t('password')"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="city"
+              class="label-register block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >{{ t("passwordc") }}</label
+            >
+            <input
+              type="url"
+              id="passwordc"
+              class="input-register bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required
             />
           </div>
