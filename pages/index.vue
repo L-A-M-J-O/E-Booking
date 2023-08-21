@@ -211,7 +211,7 @@ onMounted(async () => {});
           </div>
         </div>
       </div>
-      <div id="sectionData" class="box-travel m-5 mt-36 rounded-md flex flex-wrap h-screen content-around">
+      <div id="sectionData" class="box-travel m-5 rounded-md flex flex-wrap h-screen content-center sm:mt-[40rem] md:mt-96 xl:mt-36">
         <div class="card flex-grow m-2 h-60 md:h-52">
           <div class="card__header flex flex-wrap justify-center">
             <div class="card__title mx-3 my-3">

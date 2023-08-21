@@ -12,7 +12,7 @@ import Header from "./Header.vue";
         </div>
       </main>
     </section>
-    <Footer  />
+    <!-- <Footer  />Ww -->
   </div>
 </template>
 <style>
