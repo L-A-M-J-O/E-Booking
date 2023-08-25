@@ -59,9 +59,9 @@ onMounted(async () => {});
     <div class="flex flex-col">
       <div class="box-title h-auto m-5">
         <h2>
-          <p class="text-center">
+          <p class="text-center text-5xl sm:text-5xl md:text-[80px]">
             e-Booking
-            <span class="span_title block text-center">
+            <span class="span_title block text-center mt-4">
               Consulta nuestros schedules y reserva tu espacio en un solo click
             </span>
           </p>
@@ -211,7 +211,7 @@ onMounted(async () => {});
           </div>
         </div>
       </div>
-      <div id="sectionData" class="box-travel m-5 rounded-md flex flex-wrap h-screen content-center sm:mt-[40rem] md:mt-96 xl:mt-36">
+      <div id="sectionData" class="box-travel m-5 rounded-md flex flex-wrap h-screen content-center mt-[40rem] md:mt-96 lg:mt-80 2xl:mt-36">
         <div class="card flex-grow m-2 h-60 md:h-52">
           <div class="card__header flex flex-wrap justify-center">
             <div class="card__title mx-3 my-3">

@@ -58,7 +58,7 @@ onMounted(() => {
   <div class="container-2xl">
     <nav class="border-gray-200 dark:bg-gray-900">
       <div
-        class="w-screen-xl flex flex-wrap items-start md:items-center justify-center md:justify-around mx-auto"
+        class="w-screen-xl flex flex-wrap items-start md:items-center justify-center md:justify-around mx-auto sm:m-0 sm:p-0"
       >
         <a href="/" class="flex justify-center items-center mb-7 md:mb-0">
           <img
